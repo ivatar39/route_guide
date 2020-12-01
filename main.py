@@ -1,6 +1,5 @@
 # Импорт библиотеки tkinter для работы с GUI
 from tkinter import *
-from tkinter import filedialog as fd
 
 from personal_preferences import PersonalPreferences
 from route import Route
