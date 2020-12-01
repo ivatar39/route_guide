@@ -11,6 +11,11 @@ class Route:
         return '{} - {}. Дист: {}. Время: {}. Тип - {}\n'.format(self.point_a, self.point_b, self.distance, self.time,
                                                                  self.kind)
 
+    def print_route(self):
+        print(len(self.route))
+        for place in self.route:
+            print(place, '\n')
+
     def is_valid_to_personal_preferences(self, personal_preferences):
         return self.point_a == personal_preferences.point_a and \
                self.point_b == personal_preferences.point_b and \

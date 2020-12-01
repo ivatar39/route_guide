@@ -5,3 +5,8 @@ class PersonalPreferences:
         self.route_kind = route_kind
         self.times_of_day = times_of_day
         self.kinds_of_places = kinds_of_places
+
+    def __str__(self):
+        return '{} - {}. \nТип - {}. \nВремя: {}. \nТип мест: {}\n'.format(self.point_a, self.point_b, self.route_kind,
+                                                                           self.times_of_day,
+                                                                           self.kinds_of_places)

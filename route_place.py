@@ -12,8 +12,8 @@ class RoutePlace:
                                                       self.working_hours)
 
     def is_valid_to_personal_preferences(self, personal_preferences):
-        if self.kind in personal_preferences.self.kinds_of_places:
+        if self.kind in personal_preferences.kinds_of_places:
             for time_of_day in personal_preferences.times_of_day:
-                if self.working_hours in time_of_day:
+                if time_of_day in self.working_hours:
                     return True
         return False
